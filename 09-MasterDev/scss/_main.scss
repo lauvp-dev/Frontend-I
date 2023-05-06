@@ -1,0 +1,57 @@
+main{
+    @include flex-between(column);
+    .section-banner{
+        display: flex;
+        margin-bottom: 20px;
+        padding: 40px 20px;
+        .banner-text{
+            h2{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 30px;
+                line-height: 70px;
+                letter-spacing: 10px;
+                span{
+                    @include span(50px,10px);
+                }
+                @media screen and ($tablet-breakpoint){
+                    font-size: 55px;
+                }
+            }
+            p{
+                @include paragraph(14px, 400, $color-primary);
+                line-height: 30px;
+                margin: 15px 0;
+            }
+            a{
+                @extend %btn;
+            }
+        }
+    }
+    .section-card{
+        margin-bottom: 20px;
+        @include flex-between(column);
+        @media screen and ($desktop-breakpoint){
+            flex-direction: row;
+        }
+        h3{
+            padding: 8px;
+            span{
+                @include span(12px, 0.5px);
+            }
+        }
+        p{
+            @include paragraph(13px, 400, black);
+            padding: 0 8px;
+        }
+        &>div{
+            @extend %card;
+            width: 85%;
+            @media screen and ($desktop-breakpoint){
+                width: 100%;
+            }
+            p:nth-child(1){
+                @extend %num;
+            }
+        }
+    }
+}

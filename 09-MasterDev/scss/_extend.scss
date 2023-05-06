@@ -1,0 +1,40 @@
+%btn{
+    background-color: $bg-primary;
+    border: 0.1px dotted black; 
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: 15px;
+    padding: 18px;
+    text-align: center;
+    width: 120px;
+    transition: all 400ms;
+    &:hover{
+        box-shadow: 2px 2px 2px $color-primary;
+        transform: scale(1.1);
+    }
+}
+
+%card{
+    background-color:  $bg-secondary;
+    border-radius: 5px;
+    margin:20px;
+    padding: 10px;
+    height: 200px;
+    width: 30%;
+    transition: all 300ms;
+    &:hover{
+        box-shadow: 2px 2px 2px $bg-primary;
+        cursor: pointer;
+    }
+}
+
+%num{
+    border: 1px solid #000;
+    border-radius: 50%;
+    box-shadow: -3px -1px 2px $bg-primary;
+    line-height: 2;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,22 @@
+/* General */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(14, 13, 13);
+}
+
+img{
+  border-radius: 250px;
+}

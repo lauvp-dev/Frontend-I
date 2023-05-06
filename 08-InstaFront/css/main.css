@@ -1,0 +1,165 @@
+/* Main */
+main{
+  background-color: #FAFAFA;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  row-gap: 1.5rem;
+}
+
+main .desktop{
+  display: none;
+}
+
+.upper_bar, .main_box{
+  background-color: white;
+  border: 0.1px solid #b9b7b7;
+  border-radius: 0.3rem;
+  width: 360px;
+  justify-self: center;
+  align-self: center;
+}
+
+.upper_bar{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.upper_bar img{
+  justify-self: center;
+}
+
+.upper_bar img, .main_box .name img, .side_box .user img{
+  width: 50px;
+  height: 50px;
+}
+
+.upper_bar img, i:hover, .side_box p{
+  cursor: pointer;
+}
+
+.main_box{
+  margin-bottom: 3rem;
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.main_box .name{
+  border-bottom: 0.1px solid #b9b7b7;
+  padding: 0.5rem 1rem;
+  width: 360px;
+  display: grid;
+  grid-template-columns: 70px auto auto;
+  grid-template-rows: 67px;
+}
+
+.main_box .name h2, .main_box .name img{
+  font-size: 1rem;
+  align-self: center;
+}
+
+.main_box .name i{
+  font-size: 1.2rem;
+  align-self: center;
+  justify-self: right;
+}
+
+.main_box .content{
+  justify-self: center;
+  padding: 1rem 0rem;
+}
+
+.main_box .content img{
+  border-radius: 0;
+  width: 320px;
+}
+
+.main_box .content .text .icons i{
+  font-size: 1.5rem;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.main_box .content .text{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px repeat(4,20px);
+}
+
+.main_box .content .text h3, h4, p, span{
+  font-size: 0.625rem;
+  font-weight: 400;
+}
+
+.main_box .content .text h4{
+  color:#A49B9B;
+}
+
+.main_box .content .text p{
+  font-weight: 700;
+}
+
+.side_box{
+  display: none;
+}
+
+.side_box .user{
+  display: grid;
+  grid-template-columns: 70px 150px 150px;
+  align-self:center;
+}
+
+.side_box .user img{
+  justify-self: end;
+  margin-right: 0.5rem;
+}
+
+.side_box .user div{
+  padding: 0.5rem;
+}
+
+.side_box .user div h3, .side_box .suggested .sgd_users h3{
+  font-size: 0.625rem;
+}
+
+.side_box .user div h4{
+  color:#808080;
+}
+
+.side_box .user p, .side_box .suggested .sgd_users p{
+  color:#1CA0F6;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+}
+
+.side_box .user p{
+  font-weight: 500;
+}
+
+.side_box .suggested{
+  display: grid;
+  grid-template-rows: 40px 40px 40px;
+  grid-template-columns: 1fr;
+}
+
+.side_box .suggested h5{
+  color: #808080;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.side_box .suggested .sgd_users{
+  display: grid;
+  grid-template-columns: 40px 190px 150px;
+}
+
+.side_box .suggested .sgd_users h3,.side_box .suggested .sgd_users p{
+  padding: 0.5rem 0;
+}
+
+.side_box .sgd_users img{
+  width: 30px;
+  height: 30px;
+}

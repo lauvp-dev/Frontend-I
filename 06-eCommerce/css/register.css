@@ -1,0 +1,92 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 5rem;
+}
+.container h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 4.5rem;
+    text-align: left;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+.container label, .container input, .container select{
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25rem;
+    border-radius: 20px;
+    text-align: left;
+    height: 60px;
+    width: 620px;
+    padding: 1rem;
+}
+.container input[value="Resetear"],
+.container input[value="Registrar"]{
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin-top: 5rem;
+    width: 310px;
+    text-align: center;
+}
+.container input[type="text"]::placeholder,
+.container input[type="email"]::placeholder,
+.container input[type="password"]::placeholder,
+.container select[name="pais"]{
+    font-size: 1.25rem;
+}
+.container option{
+    font-size: 1rem;
+}
+.container input[value="Resetear"]{
+    background-color: #888888;
+    color: white;
+}
+.container input[value="Registrar"]{
+    background-color: #1CD1B0;
+}
+.container input[type="reset"]:hover, input[type="submit"]:hover{
+    cursor: pointer;
+}
+.texto-inferior{
+    margin: 1rem;
+}
+.texto-inferior p{
+    color:#222222;
+    text-align: center;
+}
+.texto-inferior a{
+    color:#00669F;
+}
+
+/* Media Queries */
+/* Tablets */
+@media (max-width: 768px){
+    .container h2{
+        font-size: 2.5rem;
+    }
+    .container form{
+        width: 250px;
+        align-items: center;
+    }
+    .container label, .container input, .container select{
+        font-size: 1rem;
+        width: 220px;
+    }
+    .container input[value="Resetear"], .container input[value="Registrar"]{
+        font-size: 1.2rem;
+        width: 220px;
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+    }
+    .container select[name="pais"], .container input[type="text"]::placeholder, .container input[type="email"]::placeholder{
+        font-size: 1rem;
+    }
+    .container input[type="password"]::placeholder{
+        font-size: 0.48rem;
+    }
+}

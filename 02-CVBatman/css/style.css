@@ -1,0 +1,64 @@
+/******* Header *******/
+header {
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+h1, h2 {
+  background-color: #bebdc0;
+  color: #005677;
+  padding: 5px 15px 5px;
+}
+
+h1 {
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/******* Main ********/
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+section {
+  margin: 0 auto;
+  width: 70%;
+}
+
+li {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.itemLista {
+  font-style: normal;
+  font-weight: normal;
+}
+
+dl {
+  margin-left: 60px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 85px;
+}
+
+.itemCronologico {
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+/******* Footer ********/
+footer {
+  background-color: #005677;
+  color: white;
+  text-align: center;
+}

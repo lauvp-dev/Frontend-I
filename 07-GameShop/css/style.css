@@ -1,0 +1,14 @@
+/******* Estilos Generales *******/
+@import "base.css";
+
+/******* Header *******/
+@import "header.css";
+
+/******* Main ********/
+@import "main.css";
+
+/******* Footer ********/
+@import "footer.css";
+
+/******* Media Queries *******/
+@import "mq.css";

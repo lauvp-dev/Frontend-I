@@ -1,0 +1,49 @@
+.logo{
+    color: #8ad906 !important;
+    background-color: white !important;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.card-portafolio p{
+    color: #8ad906;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.info{
+    font-size: 1.2rem;
+}
+
+.btn-primary a, .btn-primary .formu{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.cv a{
+    background-color: white;
+    border-radius: 10px;
+    color: #8ad906;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.cv{
+    margin: 2rem;
+}
+
+.cv a:hover{
+    color: #c435e8;
+    background-color: rgba(238, 227, 243, 0.945);
+}
+
+.form{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+}

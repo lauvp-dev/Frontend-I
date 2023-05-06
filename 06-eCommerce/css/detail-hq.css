@@ -1,0 +1,108 @@
+/* Main Page Harley Quinn */
+.main-hq{
+    background: #b755f0 url("../img/bg-hq.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-hq .card-hq{
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 529px;
+    width: 500px;
+    margin: 154px 0px 154px 0px;
+    position: relative;
+}
+
+.main-hq .card-content{
+    height: 336px;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-hq .card-content img{
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 190px;
+    top: -60px;
+    position: absolute; 
+}
+
+.main-hq .icon-heart {
+    color:#CC2424;
+    font-size: 40px;
+    left: 30px;
+    top: 20px;
+    margin: 15px;
+    position: absolute;
+}
+
+.main-hq .card-content h2{
+    color: #2C0187;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.armas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.armas img{
+    padding: 5px 15px;
+}
+
+.main-hq .card-button-hq a{
+    background-color: #2C0187;
+    cursor: pointer;
+}
+
+.card-hq .card-button-hq{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #2C0187;
+    height: 80px;
+    border-radius: 0 0 45px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries */
+/* Tablets */
+@media (max-width: 768px){
+    .main-hq .card-hq{
+        height: 500px;
+        width: 220px;
+    }
+    .main-hq .card-content, .main-hq .card-content h2, .main-hq .card-content p{
+        width: 200px;
+    }
+    .main-hq .card-content h2{
+        font-size: 1.6rem;
+    }
+    .main-hq .card-content p{
+        font-size: 0.6rem;
+    }
+    .main-hq .card-content img{
+        height: 70px;
+        left: 80px;
+        top: -35px;
+    }
+    .main-hq .icon-heart{
+        font-size: 25px;
+        left: 10px;
+        top: 15px;
+    }
+    .armas img{
+        height: 40px;
+    }
+}

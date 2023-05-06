@@ -1,0 +1,83 @@
+/* Estilos Generales */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px; 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Header */
+nav {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px; 
+}
+
+/* Main */  
+h1,h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px; 
+    ;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; 
+}
+
+.banner {
+    color: white;
+    background: wheat url("../img/lemon-pie.jpg") no-repeat fixed center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    margin: 0 10px;
+}
+
+.icono-limon {
+    color:rgb(243, 243, 135);
+    font-size: 20px;
+    background-color: rgb(51, 104, 13);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.link-merengue > a {
+    color: #F2672E;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(51, 104, 13);
+    color:rgb(243, 243, 135);
+    text-align: center;
+}
+.icono-home {
+    color:rgb(243, 243, 135);
+    margin-right: 10px;
+}

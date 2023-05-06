@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="header-superior">
+            <p>Grandes ofertas en comederos</p>
+            <div class="desplegable">
+                <form action="set-pagina.js" method="POST">
+                    <select id="idioma" name="idioma">
+                        <option value="español">Español</option>
+                        <option value="ingles">Inglés</option> 
+                    </select>
+                    <select id="moneda" name="moneda">
+                        <option value="peso-arg">ARG$</option>
+                        <option value="dolar">USD$</option> 
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="header-inferior">
+            <div class="logo-completo">
+                <a class="logo-front" href="#">
+                    <img src="img/Cat.svg" alt="Gato" />
+                    <h1><span>Front</span>Cat&Dog</h1>
+                    <img src="img/Dog.svg" alt="Perro" />
+                </a>
+            </div>
+            <i class="fas fa-bars hamburguesa"></i>
+            <nav>
+                <ul class="lista-horizontal">
+                    <li>
+                        <a href="#categorias">
+                        Categorías
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pets">
+                        Pets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#nosotros">
+                        Nosotros
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contactanos">
+                        Contáctanos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-box">
+                <p class="banner-box-titulo">¡Es un placer tenerte aquí!</p>
+                <p class="banner-box-text">¡Comederos en descuento!</p>
+                <a class="banner-box-boton" href="#">COMEDEROS</a>
+            </div>
+        </section>
+        <section class="destacados">
+            <div class="destacados-header">
+                <i class="fas fa-paw huella-naranja"></i>
+                <h2 class="titulo-destacados">Productos Destacados</h2>
+                <ul id="categorias" class="lista-destacados">
+                    <li><a href="#">Comederos</a></li>
+                    <li>-</li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li>-</li>
+                    <li><a href="#">Comida</a></li>
+                </ul>
+            </div> 
+            <div id="pets" class="destacados-cards">
+                <div class="card-producto1">
+                    <div class="detalle">
+                        <p>Jueguete churrasquito</p>
+                        <p><b>$150</b></p>
+                    </div>
+                </div>
+                <div class="card-producto2">
+                    <div class="detalle">
+                        <p>Comedero para perro</p>
+                        <p><b>$250</b></p>
+                    </div>
+                </div>
+                <div class="card-producto3">
+                    <div class="detalle">
+                        <p>Jueguete Huesito</p>
+                        <p><b>$650</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactanos">
+            <form action="php.js" method="POST">
+                <div id="contactanos" class="formulario-contactanos">
+                    <h2 class = "titulo-contactanos">Contáctanos</h2>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <div>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido"/>
+                    </div>
+                    <label for="email">Correo electrónico</label>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico"/>
+                    </div>
+                    <label for="tel">Teléfono</label>
+                    <div>
+                        <input type="tel" name="tel" id="tel" placeholder="Teléfono" pattern [0-9]{4}-[0-9]{9}/>
+                    </div>
+                </div>
+                <div class="botones-contactanos">
+                    <input class="boton-resetear" type="reset" name="reseteo" id="reseteo" value="Resetear"></input>
+                    <input class="boton-enviar" type="submit" name="envio" id="envio" value="Enviar"></input>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-superior">
+            <div class="bloque-izquierda">
+                <h3 class="suscribete">
+                <i class = "far fa-paper-plane icono-sobre-volador"></i>
+                Suscríbete para más novedades
+                </h3>
+            </div>
+            <div class="bloque-derecha">
+                <form action="suscripciones.js" method="POST">
+                    <label for="email"></label>
+                    <input class="campo-suscribeme" type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico"/>
+                    <input class="boton-suscribeme" type="submit" name="suscripcion" id="suscripcion" value="Suscríbeme"></input>
+                </form>
+            </div>
+        </div>
+        <div id="nosotros" class="footer-intermedio">
+            <div class="info">
+                <i class = "fas fa-map-marked-alt icono"></i>
+                <div>
+                    <h3>Localidad</h3>
+                    <h4>Calle - Provincia</h4>
+                </div>
+            </div>
+            <div class="info">
+                <i class = "fas fa-phone-alt icono"></i>
+                <div>
+                    <h3>Teléfono</h3>
+                    <h4>Número de teléfono</h4>
+                </div>
+            </div>
+            <div class="info">
+                <i class = "far fa-envelope icono"></i>
+                <div>
+                    <h3>Correo Electrónico</h3>
+                    <h4>Dirección de correo</h4>
+                </div>
+            </div>
+            <div class="logo-footer">
+                <a href="#" >
+                    <img src="img/Cat.svg" alt="Gato" />
+                    <p>Front<span>Cat&Dog</span></p>
+                    <img src="img/Dog.svg" alt="Perro" />
+                </a>
+            </div>
+        </div>
+        <div class="footer-inferior">
+        <p>Todos los derechos reservados Front End</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/*** Estilos Generales ***/
+@import "base.css";
+
+/******* Header *******/
+@import "header.css";
+
+/******* Main ********/
+@import "main.css";
+
+/******* Footer ********/
+@import "footer.css";
+
+/*** Responsive (Tablet) ***/
+@media screen and (max-width: 768px) {
+
+.destacados-cards{
+    justify-content: center;
+}
+.suscribete{
+    font-size: 0.8rem;
+}
+.campo-suscribeme{
+    width: 15rem;
+}
+.logo-footer{
+    width: 120%;
+}
+}
+
+/*** Responsive (Mobile) ***/
+@media screen and (max-width: 600px) {
+
+.header-superior, .header-inferior nav{
+    display: none;
+    margin: 0 auto;
+}
+.header-inferior .hamburguesa{
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+.banner{
+    background-position: -10rem;
+}
+.banner-box-titulo, .titulo-destacados{
+    text-align: center;
+}
+.banner-box-titulo{
+    font-size: 1.4rem;
+}
+.banner-box-text{
+    background-color: #92D3AD;
+    padding: 0.325rem;
+}
+.lista-destacados li a{
+    font-size: 0.7rem;
+    padding:0%;
+}
+.destacados-cards{
+    flex-direction: column;
+    margin: 0;
+}
+.contactanos{
+    margin: 0 auto 2rem;
+}
+.contactanos h2{
+    font-size: 2.5rem;
+}
+.boton-resetear, .boton-enviar{
+    flex-grow: 1;
+}
+.footer-superior{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120%;
+    margin: 0%;
+    padding: 2%;
+}
+h3{
+    font-size: 1rem;
+}
+.bloque-derecha{
+    width: 100%;
+}
+.bloque-derecha form{
+    display: flex;
+    align-items: center;
+}
+.boton-suscribeme{
+    margin: 0.5rem;
+    width: 30%;
+}
+.footer-intermedio{
+grid-template-rows: 40px 100px 100px 100px;
+}
+.info:nth-child(1), .info:nth-child(2), .info:nth-child(3), .logo-footer{
+    grid-column: span 3;
+}  
+.info:nth-child(1){
+    grid-row: 2/3;
+} 
+.info:nth-child(2){
+    grid-row: 3/4;
+}  
+.info:nth-child(3){
+    grid-row: 4/5;
+}
+.logo-footer{
+    width:auto;
+    grid-row: 1/2;
+    justify-self: center;
+    padding: 0.5rem;
+}
+}

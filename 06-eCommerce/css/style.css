@@ -1,0 +1,217 @@
+/* Estilos Generales */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Karla&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+
+a{
+    color: #F3F3F3;
+    text-decoration: none; 
+}
+
+ul li{
+    margin-right: 1rem;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px;
+}
+
+/* Header */
+.top-info{
+    background-color: #1CD1B0;
+    height: 38px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header{
+    top: 0;
+    z-index: 999;
+    position: sticky;
+}
+
+.header-superior{
+    background-color: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 101px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.header-inferior{
+    background-color: #001D2D;
+    color: #F3F3F3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h1{
+    color: #F3F3F3;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 25px;
+}
+
+/* Main */  
+main{
+    text-align: center;
+}
+
+.card{
+    background-color: #F3F3F3;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    height: 529px;
+    width: 300px;
+    margin: 150px 30px 150px 0px;
+    position: relative;
+}
+
+.card-content{
+    height: 336px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.card-1 .card-img{
+    background: #F3F3F3 url("../img/liga-justicia-batman.png") no-repeat center;
+}
+
+.card-2 .card-img{
+    background: #F3F3F3 url("../img/liga-justicia-harleyquinn.png") no-repeat center;
+}
+
+.card-3 .card-img{
+    background: #F3F3F3 url("../img/liga-justicia-batman.png") no-repeat center;
+}
+
+.card-img{
+    border-radius: 15px 15px 0px 0px;
+    height: 193px;
+    position: relative;
+}
+
+.icon-heart{
+    color:#CC2424;
+    font-size: 2rem;
+    left: 0;
+    top: 0;
+    margin: 15px;
+    position: absolute;
+}
+
+h2{
+    font-size: 30px;
+    padding: 74px 0 10px 0;
+}
+
+p{
+    padding: 0 15px;
+    text-align: left;
+}
+
+.card-content img{
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 90px;
+    top: -60px;
+    position: absolute; 
+}
+
+.card .card-button{
+    left: 55px;
+    bottom: 20px;
+    margin: 20px;
+    position: absolute;
+}
+
+.card-button a{
+    background-color: #00669F;
+    border-radius: 4px;
+    height: 48.52px;
+    width: 128.78px;
+    padding: 15px 40px;
+    text-align: center;
+}
+
+.icon-add{
+    background-color: #00669F;
+    border-radius: 50px;
+    color: #FFF;
+    font-size: 2rem;
+    height: 4rem;
+    right: 5rem;
+    width: 4rem;
+    top: calc(50vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.icon-add:hover{
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #00669F;
+    color:#FFF9F9;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Media Queries */
+/* Tablets */
+@media (max-width: 768px){
+    h1{
+        font-size: 30px;
+        margin: 20px;
+    }
+    .card{
+        margin: 30px 15px 30px 15px;
+    }
+    .icon-add{
+        font-size: 1.5rem;
+        height: 2.5rem;
+        right: 3rem;
+        width: 2.5rem;
+        top: calc(50vh - 32px);
+    }
+}
+
+/* Smartphones */
+@media (max-width: 460px){
+    .top-info p{
+        font-size: 0.8rem;
+    }
+    h1{
+        font-size: 20px;
+    }
+    nav ul li a{
+        font-size: 0.8rem;
+    }
+    .card{
+        margin: 30px 0px;
+    }
+    footer{
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+}

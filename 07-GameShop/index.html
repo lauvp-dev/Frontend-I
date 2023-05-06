@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameShop - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#" >
+          <img src="img/logoJoystick.svg" alt="Logo Tienda" />
+          <h1>Game<span>Shop</span></h1>
+        </a>
+      </div>
+      <i class="fas fa-bars hamburguesa"></i> 
+      <nav>  
+        <ul >
+          <li><a href="#">Categorías</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tendencias</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul> 
+      </nav>
+    </header>
+    <main>
+      <!--SECCIÓN BANNER-->
+      <section>
+        <div class="banner">
+          <p><span>25%</span> de descuento en juegos de PlayStation 4</p>
+          <a class="banner__btn" href="#">Comprar</a>
+        </div>
+      </section>
+
+      <!--SECCIÓN PRODUCTOS DESTACADOS-->
+      <section id="destacados">
+        <h2>Productos Destacados</h2>
+        <div class="product__container">
+          <div class="card">
+            <div class="card__img">
+              <img src="img/ps4-1.jpg" alt="Detroit" />
+            </div>
+            <div class="card__info">
+              <span>$3200</span>
+              <p>12 x $266,66 sin interés</p>
+              <small>Envío Gratis</small>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="img/ps4-2.jpg" alt="Fifa" />
+            </div>
+            <div class="card__info">
+              <span>$3200</span>
+              <p>12 x $266,66 sin interés</p>
+              <small>Envío Gratis</small>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card__img">
+              <img src="img/ps4-3.jpg" alt="Mortal Kombat" />
+            </div>
+            <div class="card__info">
+              <span>$3200</span>
+              <p>12 x $266,66 sin interés</p>
+              <small>Envío Gratis</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SECCIÓN PRODUCTOS ESTRELLA-->
+      <section id="estrellas">
+        <h2>Productos Estrella</h2>
+        <div class="container__estrella">
+          <div class="producto__estrella1">
+            <p>Sillas Gamer</p>
+            <a>Comprar</a>
+          </div>
+          <div class="producto__estrella2">
+            <p>Computadoras</p>
+            <a>Comprar</a>
+          </div>
+        </div>
+      </section>
+
+      <!--SECCIÓN SUSCRIPCIÓN-->
+      <section id="suscripcion">
+        <h2>Suscripción</h2>
+        <form action="send.js" method="POST">
+          <label for="nombre">Nombre y Apellido</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ej.: Lilian Aguirre" autofocus>
+          <label for="email">Correo electrónico</label>
+          <input type="email" name="email" id="email" placeholder="Ej.: lilag@email.com"/>
+          <div>
+              <input type="checkbox" id="ter"> 
+              <label for="ter">Acepto los Términos y Condiciones</label>
+          </div>
+          <input type="submit" value="Enviar"></input>
+        </form>
+      </section>
+      
+    </main>
+    <footer>
+      <div class="footer__superior">
+        <div class="footer__logo">
+          <a href="#" >
+            <img src="img/logoJoystick.svg" alt="Logo Tienda" />
+            <h1>Game<span>Shop</span></h1>
+          </a>
+        </div>
+        <div class="footer__redes">
+          <p>Redes Sociales</p>
+          <div>
+            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <p>Todos los derechos reservados a FrontEnd I.</p>
+      </div>
+    </footer>
+  </body>
+</html>

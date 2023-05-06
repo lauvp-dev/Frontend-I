@@ -1,0 +1,76 @@
+/******* Header *******/
+.header-superior{
+  background-color: #222222;
+  color: #FFFFFF;
+  font-size: 0.625rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-superior p{
+  margin-left: 5.625rem;
+}
+
+.header-superior .desplegable{
+  margin-right: 3.125rem;
+}
+
+.header-superior .desplegable select{
+  color: #FFFFFF;
+  background-color: #222222;
+  border-color: #222222;
+  border-radius: 5px;
+}
+
+.header-superior .desplegable select, .header-inferior ul li{
+  display: inline-block;
+}
+
+.header-inferior{
+  background-color: #F0A83E;
+  font-size: 0.8125rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1{
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h1 span{
+  color: #3C2313;
+}
+
+.logo-front img,h1,img{
+  display: inline-block;
+}
+
+.logo-completo, nav{
+  margin: 1.875rem;
+}
+
+.header-inferior .hamburguesa{
+  display: none;
+  font-size: 1.5rem;
+}
+
+.header-inferior nav ul li::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1b0";
+  color: #FFFFFF;
+}
+
+.header-inferior nav ul li{
+  margin-right: 1rem;
+  transition: transform 0.5s;
+}
+
+.header-inferior nav ul li:hover{
+  transform: scale(1.2);
+}

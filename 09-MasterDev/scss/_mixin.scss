@@ -1,0 +1,19 @@
+@mixin paragraph($size, $weight, $color){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin span($height, $padding, $display: inline-block, $background: $bg-primary){
+    display: $display;
+    background-color: $background;
+    height: $height;
+    padding-top: $padding;
+}
+
+@mixin flex-between($direction: row, $display: flex, $justify: space-between, $align: center){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

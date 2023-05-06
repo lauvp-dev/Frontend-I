@@ -1,0 +1,221 @@
+/******* Main ********/
+.banner, .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner{
+  background: #F0A83E url("../img/bowl-and-pet-daities-on-green-background.jpg") no-repeat center;
+  background-size: cover;
+  height: 37.5rem;
+  align-items: flex-end;
+}
+
+.banner-box{
+  align-items: center;
+  margin: 1.875rem;
+}
+
+.banner-box-titulo, .banner-box-text, .banner-box-boton{
+  margin: 0.3125rem;
+} 
+
+.banner-box-titulo, .banner-box-text, .banner-box-boton{
+  border-radius: 5px;
+} 
+
+.banner-box-titulo{
+  background-color: white;
+  font-size: 1.875rem;
+  padding: 0.625rem;
+}
+
+.banner-box-boton{
+  color: #fff;
+  background-color:#F0A83E;
+  height: 3.0625rem;
+  padding: 0.9375rem;
+  transition: all 750ms;
+}
+
+.banner-box-boton:hover{
+  color: #fff;
+  background-color:#26632b9a;
+  transform: rotate(360deg);
+}
+
+.destacados, .destacados-header, .detalle, .contactanos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.destacados-header, .destacados-cards, .contactanos{
+  margin: 1.875rem;
+}
+
+.lista-destacados, .huella-naranja, .titulo-destacados{
+  margin: 0.9375rem;
+}
+
+.destacados ul li{
+  display: inline-block;
+}
+
+.lista-destacados li a{
+position: relative;
+}
+
+.lista-destacados li a:before{
+  content: '';
+  background:  #F0A83E;
+  position: absolute;
+  bottom: -5px;  
+  /* Para la animacion: */
+  /* alto y ancho=0 */
+  height: 2.5px;
+  width: 0%;
+  /* transition: */
+  transition: width 0.5s;
+}
+
+.lista-destacados li a:hover::before {
+  /* ancho final */
+  width: 100%;
+}
+
+.huella-naranja{
+  color: #F0A83E;
+  font-size: 6.25rem;
+}
+
+.titulo-destacados{
+  font-size: 2.5rem;
+}
+
+.lista-destacados a{
+  color:#666666;
+  font-size: 0.9375rem;  
+}
+
+.destacados-cards{
+    flex-wrap: wrap;
+}
+
+.destacados-cards, .card-producto1, .card-producto2, .card-producto3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detalle{
+  width: 16.25rem;
+  padding: 1.25rem 3.125rem;
+  background-color: #fbfaf6;
+}
+
+.destacados-cards p{
+  color: #3C2313;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.destacados-cards b{
+  color: #F0A83E;
+}
+
+.card-producto1, .card-producto2, .card-producto3{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16.25rem;
+  height: 18.75rem;
+  margin: 0.625rem;
+  align-items: flex-end;
+  transition: all 0.5s;
+}
+
+.card-producto1{
+  background-image: url("../img/churrasquito.svg");
+}
+
+.card-producto2{
+  background-image: url("../img/comedero.svg");
+}
+
+.card-producto3{
+  background-image: url("../img/huesito.svg");
+}
+
+.card-producto1:hover, .card-producto2:hover, .card-producto3:hover{
+  position: relative;
+  top: -0.3125rem;
+  box-shadow: 0 0.625rem 0.625rem 0 #00000040;
+}
+
+.titulo-contactanos{
+  text-align: center;
+  margin: 1.25rem;
+}
+
+.formulario-contactanos input{
+  color: white;
+  background-color: #3C2313;
+  border-radius: 15px;
+  padding: 0.625rem;
+  height: 2.5rem;
+  width: 18.75rem;
+  flex-grow: 1;
+}
+
+.formulario-contactanos label{
+  visibility: hidden;
+}
+
+.formulario-contactanos input[type="text"]::placeholder,
+.formulario-contactanos input[type="email"]::placeholder,
+.formulario-contactanos input[type="tel"]::placeholder{
+  color: #FFFFFF;
+  font-size: 0.5625rem;
+}
+
+.botones-contactanos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-resetear, .boton-enviar{
+  color: #fff;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0.3125rem;
+  margin-top: 1.25rem;
+  height: 2.125rem;
+  width: 6.875rem;
+  transition: all 0.5s;
+}
+
+.boton-resetear{
+  background-color:#8A8787;
+}
+
+.boton-enviar{
+  background-color:#F0A83E;
+}
+
+.boton-resetear:hover, .boton-enviar:hover{
+  color: rgb(119, 109, 109);
+  background-color:#7ee47a;
+  border-color: wheat;
+}
+
+input[type="submit"]:hover{
+  cursor: pointer;
+}
+
+input[type="reset"]:hover{
+  cursor: pointer;
+}

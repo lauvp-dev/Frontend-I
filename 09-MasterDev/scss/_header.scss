@@ -1,0 +1,24 @@
+header {
+    @include flex-between;
+    h1{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .hamburguesa{
+        margin-right: 20px;
+    }
+    .hamburguesa:hover{
+        cursor: pointer;
+    }
+    nav{
+        display: none;
+    }
+    @media screen and ($tablet-breakpoint){
+        .hamburguesa{
+            display: none;
+        }
+        nav{
+            display: flex;
+        }
+    }
+}

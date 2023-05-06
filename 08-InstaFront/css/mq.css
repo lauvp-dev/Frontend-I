@@ -1,0 +1,72 @@
+/* Media Queries */
+
+/** Tablet **/
+@media (min-width: 460px){
+  header{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header form{
+    display: block;
+  }
+
+  header input{
+    border: 0.3px solid #222222;
+    border-radius: 0.3rem;
+    background-color: #FAFAFA;
+    height: 40px;
+    width: 250px;
+    padding: 1rem;
+  }
+  
+  header input[type="text"]::placeholder{
+    color: #222222;
+    font-family: "Roboto",sans-serif;
+    font-size: 0.875rem;
+  }
+
+  .upper_bar, .main_box, .main_box .name{
+    width: 420px;
+  }
+}
+
+/** Laptop **/
+@media (min-width: 768px){
+  header input{
+    width: 400px;
+  }
+}
+
+/** Desktop **/
+@media (min-width: 1240px){
+  a{
+    margin-left: 6.25rem;
+  }
+
+  main{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+
+  main .mobile{
+    display: none;
+  }
+
+  main .desktop{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .main_box, main .desktop,.main_box .name{
+    width: 600px;
+  }
+
+  .main_box .content img{
+    width: 500px;
+  }
+  
+  .side_box{
+    display: grid;
+    grid-template-rows: 80px auto;
+  }
+}

@@ -1,0 +1,201 @@
+.container{
+    background-color: #00669F;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+    padding: 1rem; 
+    width: max-content;
+    text-align: center;
+}
+.container h2, .bloque-izquierda textarea, .container legend, .container label, .container input, .container select, .selectores p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.container h2{
+    font-size: 2.5rem;
+    color:white;
+    padding: 5px 5px;
+}
+.container form, .bloque-izquierda, .bloque-derecha{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+.container form{
+    width: 950px;
+}
+.container .bloques{
+    display: flex;
+    padding: 0 3rem;
+}
+.bloque-izquierda textarea{            
+    border-radius: 20px;
+    margin: 50px 0px;
+    padding: 1.2rem;
+    resize: none;
+}
+.container legend{
+    color:white;
+    text-align: center;
+}
+.container label, .container input, .container select{
+    border-radius: 20px;
+    color:white;
+    text-align: left;
+    height: 80px;
+    width: 400px;
+    padding: 1rem;
+}
+.container label{
+    height: 60px;
+    margin-top: 15px;
+    padding: 1rem 0.5rem;
+}
+.selectores{
+    margin-top: 40px;
+}
+.selectores p{
+    color:white;
+    margin: 10px;
+    padding: 5px;
+    text-align: left;
+}
+.selectores label{
+    height: 40px;
+    margin-top: 0;
+}
+hr{
+    color: #CCCCCC;
+    margin: 30px 12px;
+}
+.container input{
+    color: black;
+}
+.checkbox, .radio{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox label, .radio label{
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 20px;
+    color:white;
+    display: flex;
+    align-items: center;
+    padding: 1.35rem 0;
+    text-align: left;
+}
+.container input[type="file"]{
+    font-size: 0.9rem;
+    padding: 0.8rem 0rem;
+}
+input[type=file]::-webkit-file-upload-button {
+    background-color: #CECECE;
+    border-radius: 10px;
+    color:black;
+    height: 45px;
+    width: 185px;
+    margin: 5px;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+.container input[value="Añadir"]{
+    border: none;
+    border-radius: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 90px;
+    width: 610px;
+    text-align: center;
+}
+.container select[name="especie"]{
+    color: black;
+    font-size: 1.25rem;
+}
+input[type=radio], input[type=checkbox]{
+    margin: 1rem;
+    width: 25px;
+} 
+.container option{
+    font-size: 1rem;
+}
+.container input[value="Añadir"]{
+    background-color: #1CD1B0;
+    color:black;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+/* Media Queries */
+/* Tablets */
+@media (max-width: 768px){
+    .bloques{
+        flex-direction: column;
+    }
+    .container form{
+        width: 550px;
+    }
+    textarea{
+        width: 400px;
+    }
+    .bloque-derecha{
+        margin-top: 0%;
+    }
+    .container input[value="Añadir"]{
+        font-size: 2rem;
+        height: 90px;
+        width: 410px;
+    }
+}
+/* Smartphones */
+@media (max-width: 600px){
+    .container .bloques{
+        padding: 0 0.5rem;
+    }
+    .container form{
+        width: 350px;
+    }
+    .container input, .container select{
+    font-size: 1rem;
+    }
+    .bloque-izquierda label, .bloque-izquierda input, .container select, textarea{
+        width: 300px;
+    }
+    .container input[value="Añadir"]{
+        width: 310px;
+    }
+    .container input[type="file"]{
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 460px){
+    .container{
+        width: 250px;
+    }
+    .container h2{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .container form{
+        width: 250px;
+    }
+    .bloque-izquierda label, .bloque-izquierda input, .container select, textarea{
+        width: 200px;
+    }
+    .container input[value="Añadir"]{
+        width: 210px;
+    }
+    .container input[type="file"]{
+        font-size: 0.5rem;
+    }
+    input[type=file]::-webkit-file-upload-button{
+        width: 95px;
+    }
+}
